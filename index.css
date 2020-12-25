@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap');
+
+body, h4{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: spartan;
+
+}
+
+section{
+    display: grid;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr 0.2fr;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'div1 div2 div2'
+                            'div3 div4 div5'
+                            'div6 div6 div6';
+    grid-gap:10px;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+section p{
+    color: lightgray;
+    font-family: spartan;
+}
+
+section h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: spartan;
+}
+
+
+/*.cover{
+    display: flex;
+}*/
+
+#div1{
+    /*grid-row: 1/2;
+    grid-column: 1/2;*/
+    
+    /*display: flex;
+    flex-direction: row;*/
+    
+}
+
+#div2{
+    /*grid-row: 1/2;
+    grid-column:2/3;*/
+    grid-area: div2;
+}
+
+.container{
+    padding: 57px;
+}
+
+.container div{
+    display: flex;
+    margin-top: 10px;
+}
+
+.container img{
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+.container p{
+    color: hsl(303, 10%, 53%);
+    margin-left: 10px;
+    font-weight: bold
+}
+
+.cover1{
+    background-color:hsl(0, 0%, 90%);
+    margin-left: 50px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cover2{
+    background-color:hsl(0, 0%, 90%);
+    margin-left: 75px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cover3{
+    background-color:hsl(0, 0%, 90%);
+    margin-left: 100px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#div3{
+    /*grid-row: 2/3;
+    grid-column:1/2;*/
+    grid-area: div3;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    position: relative;
+    top: 0%;
+    font-size: small;
+}
+
+.smith{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.smith img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+#div4{
+    /*grid-row: 2/3;
+    grid-column: 2/3;*/
+    grid-area: div4;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    position: relative;
+    top: 10%;
+    font-size: small;
+}
+
+.roberts{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.roberts img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#div5{
+    /*grid-row: 2/3;
+    grid-column: 3/4;*/
+    grid-area: div5;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    position: relative;
+    top: 20%;
+    font-size: small;
+}
+
+.wallace{
+   display: flex;
+   justify-content: space-evenly;
+}
+.wallace img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h4{
+    color: hsl(0, 0%, 100%);
+}
+
+span{
+    color: hsl(333, 80%, 67%);
+}
+
+.attribution{
+    /*grid-row: 3/4;*/
+    grid-area: div6;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    section{
+        display: grid;
+        width: 90%;
+        margin: 0px auto;
+        grid-template-areas: 'div1'
+                            'div2'
+                            'div3'
+                            'div4'
+                            'div5'
+                            'div6';
+        grid-gap: 5px;
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    }
+
+    #div1{
+        /*grid-row: 1/2;
+        grid-column: 1/2;*/
+        grid-area: div1;
+        /*display: flex;
+        flex-direction: row;*/
+        text-align: center;
+    }
+    
+    #div2{
+        /*grid-row: 1/2;
+        grid-column:2/3;*/
+        grid-area: div2;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container{
+        padding: 0px;
+    }
+
+    .cover1{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .cover2{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .cover3{
+        margin-left: 0;
+        width: 100%;
+    }
+}
